@@ -119,7 +119,7 @@ mat_cv *load_image_mat_cv(const char *filename, int flag)
         return (mat_cv *)mat_ptr;
     }
     catch (...) {
-        cerr << "OpenCV exception: load_image_mat_cv - " + filename +" \n";
+        cerr << "OpenCV exception: load_image_mat_cv - " << filename << " \n";
     }
     return NULL;
 }
