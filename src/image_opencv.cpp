@@ -99,6 +99,7 @@ mat_cv *load_image_mat_cv(const char *filename, int flag)
         cv::Mat *mat_ptr = new cv::Mat();
         cv::Mat &mat = *mat_ptr;
         mat = cv::imread(filename, flag);
+        cout << "OpenCV Load Image Mat CV: " + filename;
         if (mat.empty())
         {
             delete mat_ptr;
